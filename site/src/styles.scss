@@ -1,0 +1,50 @@
+@charset "utf-8";
+//@import url('https://fonts.googleapis.com/css?family=Muli:400,700');
+
+// Needed for $gap
+//@import "vendor/bulma/sass/utilities/initial-variables";
+//@import url('/citadel/tools/static/initial-variables.sass');
+//@import 'initial-variables.sass';
+
+// Import default variables
+//@import "./node_modules/bulma/sass/utilities/initial-variables.sass";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+
+// Set your brand colors
+$my-primary: #2a3f54;
+$my-link: #ed1c24;
+//$my-red: #ed1c24;
+//$brown: #757763;
+$my-grey-dark: #73878a;
+$my-grey-light: #f7f7f7;
+$my-grey-lighter: #ededed;
+
+// Update Bulma's global variables
+//$family-sans-serif: "Nunito", sans-serif;
+$grey-dark: $my-grey-dark;
+$grey-light: $my-grey-light;
+$grey-lighter: $my-grey-lighter;
+$primary: $my-primary;
+$link: $my-link;
+$widescreen-enabled: false;
+$fullhd-enabled: false;
+
+$info: #70bfff;
+$success: #5dc25d;
+$warning: #fff878;
+$danger:  #ff5e5e;
+
+// Update some of Bulma's component variables
+$body-background-color: $my-grey-light;
+$control-border-width: 1px;
+
+// Import Bulma
+@import "~bulma/bulma.sass";
+
+// Import Buefy
+// reference https://buefy.org/documentation/customization/
+$primary: $my-primary;
+@import "~buefy/src/scss/buefy";
