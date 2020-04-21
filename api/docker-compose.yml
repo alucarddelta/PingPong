@@ -1,0 +1,11 @@
+version: '2'
+services:
+  skeleton:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: skeleton
+    ports:
+      - "5000:5000/tcp"
+    env_file:
+      - api-skeleton.env
